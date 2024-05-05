@@ -51,15 +51,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddExercisesXML.xml" />
-    <Content Include="YakovDB.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PlanModel\Model.csproj">
       <Project>{3ce559fe-06f3-4698-b773-1d327c80237d}</Project>
       <Name>Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="YakovDB.accdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

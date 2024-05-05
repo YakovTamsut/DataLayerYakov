@@ -61,7 +61,7 @@ namespace ViewModel
             command.Parameters.AddWithValue("@password", user.Password);
             command.Parameters.AddWithValue("@gender", user.Gender);
             command.Parameters.AddWithValue("@isManager", user.IsManager);
-            command.Parameters.AddWithValue("@birthday", user.BirthDay);
+            command.Parameters.AddWithValue("@birthDay", user.BirthDay.ToShortDateString());
             command.Parameters.AddWithValue("@id", user.ID);
         }
 
